@@ -15,7 +15,7 @@ public class CorsConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
 
-        config.setAllowedOrigins(List.of("http://localhost:3000", "https://mi-dominio.com")); // Orígenes permitidos
+        config.setAllowedOrigins(List.of("*")); // Orígenes permitidos
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS")); // Métodos permitidos
         config.setAllowedHeaders(List.of("*")); // Todos los encabezados permitidos
         config.setAllowCredentials(true); // Permitir credenciales
